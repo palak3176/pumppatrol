@@ -10,13 +10,14 @@ api_hash = os.getenv('API_HASH')
 phone = os.getenv('PHONE_NUMBER')
 session_name = 'pump_patrol_session'
 # Database Configuration
-DB_CONFIG = {
-    'host': '127.0.0.1',
-    'user': 'root',
-    'password': '31072006Palak',
-    'database': 'pumppatrol'
-}
+import os
 
+DB_CONFIG = {
+    'host': os.getenv("DB_HOST"),
+    'user': os.getenv("DB_USER"),
+    'password': os.getenv("DB_PASSWORD"),
+    'database': os.getenv("DB_NAME")
+}
 
 def save_to_db(timestamp, sender_id, group_name, text):
     try:
