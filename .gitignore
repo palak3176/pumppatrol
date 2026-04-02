@@ -3,10 +3,10 @@ API_ID=37201839
 API_HASH=29e6a3de15d212f67e8a9b958deb43b1
 PHONE_NUMBER=+919619921448
 
-#DB_CONFIG = {
-#    'host': '127.0.0.1',
-#    'user': 'root',
-#    'password': '31072006Palak',
-#    'database': 'pumppatrol'
-#}
+DB_CONFIG = {
+    'host': '127.0.0.1',
+    'user': 'root',
+    'password': '31072006Palak',
+    'database': 'pumppatrol'
+}
 
