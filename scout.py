@@ -6,7 +6,14 @@ from bs4 import BeautifulSoup
 import time
 import math
 
-DB_CONFIG = {'host': '127.0.0.1', 'user': 'root', 'password': '31072006Palak', 'database': 'pumppatrol'}
+import os
+
+DB_CONFIG = {
+    'host': os.getenv("DB_HOST"),
+    'user': os.getenv("DB_USER"),
+    'password': os.getenv("DB_PASSWORD"),
+    'database': os.getenv("DB_NAME")
+}
 
 
 def clean_for_mysql(val):
